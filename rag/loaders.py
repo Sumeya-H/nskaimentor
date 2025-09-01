@@ -12,9 +12,9 @@ def load_markdown(path: Path) -> list[Document]:
     return TextLoader(str(path), encoding="utf-8").load()
 
 def load_youtube_transcript(url_or_id: str) -> list[Document]:
-    vid = url_or_id.split("v=")[-1].split("&")[0] if "youtube" in url_or_id else url_or_id
-    print("<<<<<<<<<<<<<<<<<<<<<<<",vid)
-    transcript = YouTubeTranscriptApi.fetch(vid)
+    video_id = url_or_id.split("v=")[-1].split("&")[0] if "youtube" in url_or_id else url_or_id
+    print("<<<<<<<<<<<<<<<<<<<<<<<",video_id)
+    transcript = YouTubeTranscriptApi.fetch(video_id)
     text = " ".join([t["text"] for t in transcript])
     return [Document(page_content=text, metadata={"source":"youtube", "video_id":vid})]
 

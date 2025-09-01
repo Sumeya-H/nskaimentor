@@ -7,7 +7,7 @@ from rag.index import build_chroma
 docs = []
 docs += load_markdown(Path("data/phase_one_requirements.md"))
 docs += load_github_readme("Sumeya-H/textbook-tutor")  # adjust if needed
-docs += load_youtube_transcript("https://www.youtube.com/watch?v=GR42jIvQjHs")  # sample
+#docs += load_youtube_transcript("https://www.youtube.com/watch?v=GR42jIvQjHs")  # sample
 # add a sample PDF locally: data/guide.pdf
 docs += load_pdf(Path("data/Level 1.pdf"))
 
