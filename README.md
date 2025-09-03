@@ -62,3 +62,69 @@ The **NSK.AI Mentor Agent** supports bootcamp participants 24/7 through:
 ---
 
 ## 📂 Project Structure
+NSK.AI-Mentor-Agent/
+│── data/ # Study materials, transcripts, rubrics
+│── notebooks/ # Prototyping and experiments
+│── src/
+│ ├── retriever/ # Indexing + retrieval pipeline
+│ ├── agents/ # Q&A, Repo Evaluator, Coordinator
+│ ├── ui/ # Streamlit app
+│ └── utils/ # Helper functions
+│── requirements.txt
+│── README.md
+
+
+---
+
+## 🚀 Setup & Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/<your-org>/NSK.AI-Mentor-Agent.git
+   cd NSK.AI-Mentor-Agent
+
+2. Create and activate environment:
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the app
+streamlit run src/ui/app.py
+
+📌 Features Roadmap
+
+ Q&A Agent with bootcamp resources
+
+ Repo Evaluator Agent (criteria checks + LLM feedback)
+
+ Knowledge Search (projects + sessions)
+
+ Personalized learning roadmaps
+
+ Discord bot integration for real-time support
+
+ Scalable vector DB (Pinecone/Weaviate)
+
+🌍 Impact
+
+Students get personalized, on-demand support.
+
+Mentors save hours of repetitive explanations.
+
+Future cohorts benefit from a growing knowledge hub.
+
+🤝 Contributors
+
+Sumeya Hussein – Data prep, retrieval pipeline
+
+dr9amxplorer – Repo Evaluator Agent
+
+Rose Onyango – Streamlit UI, testing & polish
+
+📄 License
+
+This project is for educational and hackathon purposes under the NSK.AI initiative.
+Future licensing to be determined.
+
