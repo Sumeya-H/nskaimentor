@@ -55,7 +55,7 @@ NSK.AI-Mentor-Agent/ │── data/ # Study materials, transcripts, rubrics │
 🚀 Setup & Installation
 Clone the repo:
 
-git clone https://github.com/<your-org>/NSK.AI-Mentor-Agent.git
+git clone [https://github.com/<your-org>/NSK.AI-Mentor-Agent.git](https://github.com/Sumeya-H/nskaimentor.git)
 cd NSK.AI-Mentor-Agent
 Create and activate environment: python -m venv venv source venv/bin/activate # Mac/Linux venv\Scripts\activate # Windows
 
@@ -96,3 +96,4 @@ Rose Onyango – Streamlit UI, testing & polish
 📄 License
 
 This project is for educational and hackathon purposes under the NSK.AI initiative. Future licensing to be determined.
+
